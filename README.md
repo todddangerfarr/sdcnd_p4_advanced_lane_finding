@@ -20,7 +20,7 @@ The goals / steps of this project are the following:
 [image2]: ./writeup_images/undistorted_image.png "Road Undistorted"
 [image3]: ./writeup_images/gradient_thresholding.png "Gradient Examples"
 [image4]: ./writeup_images/color_channels.png "Test Images Color Channels"
-[image5]: ./writeup_images/gradient_color_threshold.png "Binary Example"
+[image5]: ./writeup_images/thresholding_result.png "Binary Example"
 [image6]: ./writeup_images/birdseye_warp.png "Warp Example"
 [image7]: ./writeup_images/binary_warp_test_images.png "Binary Warped"
 [image8]: ./writeup_images/sliding_window_search.png "Sliding Window Search"
@@ -149,7 +149,7 @@ The second method for finding lane lines is to fit from the previous polynomial 
 
 Both the functions for calculating radius of curvature and line position respect to center live in the Line Class found in Section 2.7.2 of the IPython Notebook.  
 
-The radius of curvature calculation comes from information contained on this <a href="https://www.intmath.com/applications-differentiation/8-radius-curvature.php">website</a> and the resulting code can be seen below. 
+The radius of curvature calculation comes from information contained on this <a href="https://www.intmath.com/applications-differentiation/8-radius-curvature.php">website</a> and the resulting code can be seen below.
 
 ```python
 curve_rad = (((1 + (2*fit[0]*y_eval*meters_per_pix_y + fit[1])**2)**1.5) / np.absolute(2*fit[0]))
